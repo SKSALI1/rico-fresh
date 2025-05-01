@@ -1,5 +1,4 @@
 
-    
 <div>
     <!-- breadcrumb-area -->
     <section class="breadcrumb__wrap">
@@ -43,8 +42,8 @@
                 <div class="col-lg-6">
                     <div class="about__content">
                         <div class="section__title">
-                            <span class="sub-title">{{ $subTitle }}</span>
-                            <h2 class="title">{{ $title }}</h2>
+                            <span class="sub-title">01 - About me</span>
+                            <h2 class="title">I have transform your ideas into remarkable digital products</h2>
                         </div>
                         <div class="about__exp">
                             <div class="about__exp__icon">
@@ -263,4 +262,3 @@
     <!-- about-area-end -->
 </div>
     
-

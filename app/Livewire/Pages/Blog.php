@@ -8,6 +8,6 @@ class Blog extends Component
 {
     public function render()
     {
-        return view('livewire.pages.blog');
+        return view('livewire.pages.blog')->layout('components.layouts.frontend-layout');
     }
 }

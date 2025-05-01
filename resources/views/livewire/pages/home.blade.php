@@ -1,4 +1,4 @@
-<x-frontend-layout>
+<x-layouts.frontend-layout>
     <main>
 
         <!-- banner-area -->
@@ -39,4 +39,4 @@
 
     </main>
     <!-- main-area-end -->
-</x-frontend-layout>
+</x-layouts.frontend-layout>
