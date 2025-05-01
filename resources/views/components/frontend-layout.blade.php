@@ -11,16 +11,42 @@
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
+
+        <link rel="stylesheet" href="{{asset('frontend/assets/css/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{asset('frontend/assets/css/animate.min.css')}}">
+        <link rel="stylesheet" href="{{asset('frontend/assets/css/magnific-popup.css')}}">
+        <link rel="stylesheet" href="{{asset('frontend/assets/css/fontawesome-all.min.css')}}">
+        <link rel="stylesheet" href="{{asset('frontend/assets/css/slick.css')}}">
+        <link rel="stylesheet" href="{{asset('frontend/assets/css/default.css')}}">
+        <link rel="stylesheet" href="{{asset('frontend/assets/css/style.css')}}">
+        <link rel="stylesheet" href="{{asset('frontend/assets/css/responsive.css')}}">
+
+
+
         <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
+        {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
     </head>
     <body class="font-sans antialiased">
 
             <!-- Page Content -->
             <main>
-                <h1>UserPanel</h1>
+                <x-usernavbar />
                 {{ $slot }}
+                <x-footer />
             </main>
+
         </div>
+
+        <script src="{{asset('frontend/assets/js/vendor/jquery-3.6.0.min.js')}}"></script>
+        <script src="{{asset('frontend/assets/js/bootstrap.min.js')}}"></script>
+        <script src="{{asset('frontend/assets/js/isotope.pkgd.min.js')}}"></script>
+        <script src="{{asset('frontend/assets/js/imagesloaded.pkgd.min.js')}}"></script>
+        <script src="{{asset('frontend/assets/js/jquery.magnific-popup.min.js')}}"></script>
+        <script src="{{asset('frontend/assets/js/element-in-view.js')}}"></script>
+        <script src="{{asset('frontend/assets/js/slick.min.js')}}"></script>
+        <script src="{{asset('frontend/assets/js/ajax-form.js')}}"></script>
+        <script src="{{asset('frontend/assets/js/wow.min.js')}}"></script>
+        <script src="{{asset('frontend/assets/js/plugins.js')}}"></script>
+        <script src="{{asset('frontend/assets/js/main.js')}}"></script>
     </body>
 </html>
