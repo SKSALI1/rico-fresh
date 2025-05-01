@@ -1,4 +1,8 @@
+@php
+    $route = Route::current()->getName();
+@endphp
 <!-- header-area -->
+
 <header>
     <div id="sticky-header" class="menu__area transparent-header">
         <div class="container custom-container">
@@ -13,16 +17,21 @@
                             </div>
                             <div class="navbar__wrap main__menu d-none d-xl-flex">
                                 <ul class="navigation">
-                                    <li class="active"><a href="{{ url('/') }}" wire:navigate.hover>Home</a></li>
-                                    <li><a href="{{ route('about.index') }}"  wire:navigate.hover>About</a></li>
-                                    <li><a href="{{ route('service.index') }}" wire:navigate.hover>Services</a></li>
-                                    <li><a href="{{ route('portfolio.index') }}"wire:navigate.hover>Portfolio</a></li>
-                                    <li><a href="{{ route('blog.index') }}"wire:navigate.hover>Our Blog</a></li>
-                                    <li><a href="{{ route('contact.index') }}"wire:navigate.hover>contact me</a></li>
+                                    <li class="{{ route($route) == route('home.index') ? 'active' : "" }}"><a href="{{ route('home.index') }}" wire:navigate.hover>Home</a></li>
+
+                                    <li class="{{ route($route) == route('about.index') ? 'active' : "" }}"><a href="{{ route('about.index') }}"  wire:navigate.hover>About</a></li>
+
+                                    <li class="{{ route($route) == route('service.index') ? 'active' : "" }}"><a href="{{ route('service.index') }}" wire:navigate.hover>Services</a></li>
+
+                                    <li class="{{ route($route) == route('portfolio.index') ? 'active' : "" }}"><a href="{{ route('portfolio.index') }}"wire:navigate.hover>Portfolio</a></li>
+
+                                    <li class="{{ route($route) == route('blog.index') ? 'active' : "" }}"><a href="{{ route('blog.index') }}"wire:navigate.hover>Our Blog</a></li>
+
+                                    <li class="{{ route($route) == route('contact.index') ? 'active' : "" }}"><a href="{{ route('contact.index') }}"wire:navigate.hover>contact me</a></li>
                                 </ul>
                             </div>
                             <div class="header__btn d-none d-md-block">
-                                <a href="contact.html" class="btn">Contact me</a>
+                                <a {{ route($route) == route('contact.index') ? 'active' : "" }} href="{{ route('contact.index') }}" class="btn">Contact me</a>
                             </div>
                         </nav>
                     </div>

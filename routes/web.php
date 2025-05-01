@@ -12,7 +12,7 @@ use App\Livewire\Pages\Test;
 //frontend groups
 Route::get('/', function () {
     return view('livewire.pages.home');
-});
+})->name('home.index');
 
 
 Route::get('/about',About::class)->name('about.index');
